@@ -7,15 +7,8 @@
 
 function myButtonClicked() {
   // define numbers
-  const firstNumber = parseFloat(document.getElementById("first-number").value)
-  const secondNumber = parseFloat(document.getElementById("second-number").value)
-  let answer = 0
-  // multiply
-  let numberOfLoops = 1
-  while (numberOfLoops <= firstNumber) {
-    answer = answer + secondNumber
-    numberOfLoops++
-  }
+  const number = parseInt(document.getElementById("your-number").value)
+  const sum = (number / 2) * (number + 1)
   // print answer
-  document.getElementById("answer").innerHTML = "The answer is: " + answer
+  document.getElementById("answer").innerHTML = "The answer is: " + sum
 }
